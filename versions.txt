@@ -1,6 +1,6 @@
 Last updated: 2/8/2020
 
-Bootstrap: 4.4.1
+Bootstrap: 4.3.1
 
 Python:
 alabaster==0.7.12
