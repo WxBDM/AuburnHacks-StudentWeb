@@ -36,115 +36,78 @@
       <div class="row">
         <!-- Navigation bar-->
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <a class="navbar-brand">
-                    <h5>Student Web</h5>
-                </a>
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="../static/dashboard.html">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../static/todo.html">To do</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Grades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../static/notes.html">Notes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../static/settings.html">Settings</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-		
-        <div class="col-md-10 offset-md-2">
-            <div class="container">
-                    <h1>Grade Calculator</h1>
-                <form>
-                  <div class="form-row">
-                    <div class="col">
-                        <label>What is the title of this course?</label>
-                      <input type="text" class="form-control" placeholder="e.g. COMP2210">
+			<a class="navbar-brand">
+				<h5>Student Web</h5>
+			</a>
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="../static/dashboard.html">
+                Overview
+              </a>
+					</li>
+                    <li class="nav-item">
+						<a class="nav-link" href="../static/class.html">
+							Class Dashboard
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../static/todo.html">
+							Deadlines
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">
+							Grade Manager
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../static/notes.html">
+							Note Manager
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../static/settings.html">
+							Class Settings
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav> 
+          
+        <div class="row d-flex offset-md-2 ">
+            <div class="container p-3 mb-2 bg-dark text-white">
+                <div class="row">
+                    <div class="col p-3 mb-2 bg-dark text-white">
+                        <h3>Current Grade:</h3>
                     </div>
-                  </div>
-                <label>How are the assignment weighted?</label>
+                    <div class="col p-3 mb-2 bg-dark text-white">
+                        <h3>Weights:</h3>
+                        Assignments | 30%
+                        <p>Exams | 40%</p>
+                    </div>
+                </div>
+                
+                    <h3>Add Grades</h3>
+                <form>
                 <!-- Row1-->
                 <div class="form-row">
                     <div class="col">
                       <input type="text" class="form-control" placeholder="Assignment Name">
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Grade (%)">
+                      <input type="text" class="form-control" placeholder="Category">
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Weight">
-                    </div>
-                  </div>
-                <!-- Row2-->
-                <div class="form-row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Assignment Name">
+                      <input type="text" class="form-control" placeholder="Received Grade">
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control" placeholder="Grade (%)">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Weight">
-                    </div>
-                  </div>
-                <!-- Row3-->
-                <div class="form-row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Assignment Name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Grade (%)">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Weight">
-                    </div>
-                  </div>
-                <!-- Row4-->
-                <div class="form-row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Assignment Name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Grade (%)">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Weight">
-                    </div>
-                  </div>
-                <!-- Row5-->
-                <div class="form-row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Assignment Name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Grade (%)">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Weight">
-                    </div>
-                  </div>
-                <!-- Row6-->
-                <div class="form-row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Assignment Name">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Grade (%)">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Weight">
+                      <input type="text" class="form-control" placeholder="Max Grade ">
                     </div>
                   </div>
                 </form>
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Update Assignments</button>
+                <p></p>
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Update Assignment</button>
                 </div>
             </div> 
         </div>
