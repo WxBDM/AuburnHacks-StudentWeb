@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'settings',
-    'grades',
+    'grade_manager',
+    'dashboard',
 ]
 
 MIDDLEWARE = [
