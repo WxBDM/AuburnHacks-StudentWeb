@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>StudentWeb</title>
+
+        <!-- Bootstrap core CSS 4.3.1 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Custom styles for this template -->
+        <link href="css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class = 'container-fluid'>
+            <nav class="row d-flex navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Classes Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_overview.html">Class Overview</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="assignment_manager.html">Assignment Manager</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grades_manager.html">Grade Manager</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notes_manager.html">Notes Manager</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="settings.html">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <br>
+
+            <!-- title of class -->
+            <div id = 'title' class = 'row'>
+                <div class = 'col text-center'>
+                    <h1>Assignment Manager</h1>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- Two large divs next to eachother -->
+            <div class = "row">
+                <!-- Form to add new assignment -->
+                <div class = "col col-lg-6">
+                    <h2 class = 'text-center'>Add New Assignment</h2>
+                    <form>
+                        <div class="form-group col-sm">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Assignment Name">
+                        </div>
+                        <div class="form-group col-sm">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Due Date (mm/dd)">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button type="submit" class="btn btn-primary">Create New Assignment
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Upcoming Assignments -->
+                <!-- Dynamically Generated - Use Jinja! -->
+                <!-- To Do: add buttons to remove. -->
+                <div class = "col text-center col-lg-6">
+                    <h2>Assignments Due</h2>
+                    <div class = 'row'>
+                        <div class = 'col'>
+                            <h6>Assignment 4 - due 2/8 at 11:59PM</h6>
+                        </div>
+                    </div>
+                    <div class = 'row'>
+                        <div class = 'col'>
+                            <h6>Read chapter 4 of book before next class.</h6>
+                        </div>
+                    </div>
+                </div> <!-- End upcoming assignments -->
+            </div>
+        </div>
+    </body>
+</html>
