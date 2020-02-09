@@ -11,8 +11,6 @@
         <!-- Bootstrap core CSS 4.3.1 -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <!-- Custom styles for this template -->
-        <link href="css/base.css" rel="stylesheet">
     </head>
 
     <body>
@@ -76,16 +74,13 @@
                 <!-- Upcoming Assignments -->
                 <div class = "col text-center col-lg-6">
                     <h2>Assignments Due</h2>
+                    {% for assignment in assignment %}
                     <div class = 'row'>
                         <div class = 'col'>
-                            <h6>Assignment 4 - due 2/8 at 11:59PM</h6>
+                            <h6>{{assignment.name}}, Due: {{assignment.due_date}}</h6>
                         </div>
                     </div>
-                    <div class = 'row'>
-                        <div class = 'col'>
-                            <h6>Read chapter 4 of book before next class.</h6>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

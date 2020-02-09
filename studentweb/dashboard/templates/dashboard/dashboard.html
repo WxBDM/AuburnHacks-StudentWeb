@@ -11,8 +11,6 @@
         <!-- Bootstrap core CSS 4.3.1 -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <!-- Custom styles for this template -->
-        <link href="css/base.css" rel="stylesheet">
     </head>
 
     <body>
@@ -55,11 +53,9 @@
                             <h2>Upcoming Assignments Due</h2>
                         </div>
                         <div class="p-3 mb-2 bg-dark text-white">
-                            <h5>Formal Lab 2 Due: 2/12 11:59PM</h5>
-                            <h5>Ethics Book Reading Due: 2/13 9:15AM</h5>
-                            <h5>Ethics Reading Due: 2/15 8:00AM</h5>
-                            <h5>Formal Homework Due: 2/16 11:59PM</h5>
-                            <h5>Architecture Assignment 2 Due: 2/27 11:30PM</h5>
+                            {% for assignment in assignments %}
+                            <h5>{{assignment.name}}, Due: {{assignment.due_date}}</h5>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

@@ -30,5 +30,6 @@ urlpatterns = [
     path('dashboard.html', home_page),
     path('assignment_manager.html', assignmentHTML),
     path('class_overview.html', overview_page),
-    path('notes_manager.html', notesHTML)
+    path('notes_manager.html', notesHTML),
+    path('', home_page)
 ]
