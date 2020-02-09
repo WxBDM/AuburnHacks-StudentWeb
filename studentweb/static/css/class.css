@@ -9,6 +9,13 @@ body {
 	height: 16px;
 	vertical-align: text-bottom;
 }
+.navbar {
+  min-height: 48px;
+}
+
+.navbar-custom {
+    background-color: #669EB8;
+}
 
 .sidebar {
 	position: fixed;
