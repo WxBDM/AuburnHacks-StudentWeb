@@ -1,116 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-    <title>StudentWeb - Grades</title>
+        <title>StudentWeb - Grades</title>
 
-    <!-- Bootstrap core CSS 4.3.1 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Bootstrap core CSS 4.3.1 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Custom styles for this template -->
-    <link href="../static/css/class.css" rel="stylesheet">
-      
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </head>
+        <!-- Custom styles for this template -->
+        <link href="../static/css/class.css" rel="stylesheet">
 
-  <body>   
-<!-- Navigation bar-->
-  <nav class="navbar navbar-expand-sm navbar-custom static-top">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-        </ul>
-      </div>
-    </div>
-  </nav> 
-      
-    <div class="container-fluid">
-      <div class="row">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+
+    <body>   
         <!-- Navigation bar-->
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-			<a class="navbar-brand">
-				<h5>Student Web</h5>
-			</a>
-      <div class="sidebar-sticky">
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link" href="../static/dashboard.html">
-                Overview
-              </a>
-					</li>
-                    <li class="nav-item">
-						<a class="nav-link" href="../static/class.html">
-							Class Dashboard
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../static/todo.html">
-							Deadlines
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="#">
-							Grade Manager
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../static/notes.html">
-							Note Manager
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../static/settings.html">
-							Class Settings
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav> 
-          
-        <div class="row d-flex offset-md-2 ">
-            <div class="container p-3 mb-2 bg-dark text-white">
-                <div class="row">
-                    <div class="col p-3 mb-2 bg-dark text-white">
-                        <h3>Current Grade:</h3>
-                    </div>
-                    <div class="col p-3 mb-2 bg-dark text-white">
-                        <h3>Weights:</h3>
-                        Assignments | 30%
-                        <p>Exams | 40%</p>
-                    </div>
+        <nav class="navbar navbar-expand-sm navbar-custom static-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                    </ul>
                 </div>
-                
-                    <h3>Add Grades</h3>
-                <form>
-                <!-- Row1-->
-                <div class="form-row">
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Assignment Name">
+            </div>
+        </nav> 
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Navigation bar-->
+                <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                    <a class="navbar-brand">
+                        <h5>Student Web</h5>
+                    </a>
+                    <div class="sidebar-sticky">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../static/dashboard.html">
+                                    Overview
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../static/class.html">
+                                    Class Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../static/todo.html">
+                                    Deadlines
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">
+                                    Grade Manager
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../static/notes.html">
+                                    Note Manager
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../static/settings.html">
+                                    Class Settings
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Category">
+                </nav> 
+
+                <div class="row d-flex offset-md-2 ">
+                    <div class="container p-3 mb-2 bg-dark text-white">
+                        <div class="row">
+                            <div class="col p-3 mb-2 bg-dark text-white">
+                                <h3>Current Grade:</h3>
+                            </div>
+                            <div class="col p-3 mb-2 bg-dark text-white">
+                                <h3>Weights:</h3>
+                                Assignments | 30%
+                                <p>Exams | 40%</p>
+                            </div>
+                        </div>
+
+                        <h3>Add Grades</h3>
+                        <form>
+                            <!-- Row1-->
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Assignment Name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Category">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Received Grade">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Max Grade ">
+                                </div>
+                            </div>
+                        </form>
+                        <p></p>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Update Assignment</button>
                     </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Received Grade">
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control" placeholder="Max Grade ">
-                    </div>
-                  </div>
-                </form>
-                <p></p>
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Update Assignment</button>
-                </div>
-            </div> 
+                </div> 
+            </div>
         </div>
-      </div>
-  </body>
+    </body>
 </html>
