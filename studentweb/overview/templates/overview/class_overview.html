@@ -14,8 +14,9 @@
     </head>
 
     <body>
+        {% csrf_token %}
         <div class = 'container-fluid'>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <nav class="row d-flex navbar navbar-expand-sm bg-dark navbar-dark">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="dashboard.html">Classes Dashboard</a>
@@ -74,13 +75,12 @@
                 <!-- Upcoming Assignments -->
                 <div class = "col text-center col-lg-6">
                     <h2>Assignments Due</h2>
-                    {% for assignment in assignment %}
                     <div class = 'row'>
                         <div class = 'col'>
-                            <h6>{{assignment.name}}, Due: {{assignment.due_date}}</h6>
+                            <h6>Read ch 10, Due: 3/12</h6>
+                            <h6>Homework 3, Due: 2/13</h6>
                         </div>
                     </div>
-                    {% endfor %}
                 </div>
             </div>
         </div>
