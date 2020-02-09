@@ -73,11 +73,19 @@ WSGI_APPLICATION = 'studentweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+# database stuff
+db_password = os.getenv('DJANGO_MONGODB_PASSWORD')
+host = "mongodb+srv://auhacks_web:{}@auburnhacks-2020-zdwgn.gcp.mongodb.net/\
+test?retryWrites=true&w=majority".format(db_password)
+
+DATABASES = {    
+     'default' : {
+       'ENGINE' : 'djongo',
+       'NAME' : 'test_student',
+       'HOST' : host,
+       'USER' : 'auhacks_web',
+       'PASSWORD' : db_password, 
+     }
 }
 
 
