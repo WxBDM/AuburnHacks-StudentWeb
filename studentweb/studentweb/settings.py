@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'settings',
     'grade_manager',
     'dashboard',
+    'overview',
+    'assignment_manager',
+    'notes_manager'
 ]
 
 MIDDLEWARE = [

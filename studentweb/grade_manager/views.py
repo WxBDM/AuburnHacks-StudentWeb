@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def gradesHTML(request):    
     
-    return render(request, "grade_manager/grades.html")
+    return render(request, "grade_manager/grade_manager.html")
