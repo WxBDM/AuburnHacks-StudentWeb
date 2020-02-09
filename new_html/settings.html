@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>StudentWeb</title>
+
+        <!-- Bootstrap core CSS 4.3.1 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Custom styles for this template -->
+        <link href="css/base.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class = 'container-fluid'>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Classes Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="class_overview.html">Class Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assignment_manager.html">Assignment Manager</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="grades_manager.html">Grade Manager</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notes_manager.html">Notes Manager</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <br>
+
+            <!-- title of class -->
+            <div id = 'title' class = 'row'>
+                <div class = 'col text-center'>
+                    <h1>Account Settings</h1>
+                </div>
+            </div>
+
+            <br>
+
+            <div class = 'row'>
+                <div class = 'col-6'>
+                    <h4>General Settings</h4>
+                    <!-- play with this -->
+                    <form class = "form-inline">
+                        <div class="form-group mb-2">
+                            <label>First Name</label>
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control", placeholder = "Last Name">
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="exampleInputPassword1">E-mail Address</label>
+                            <input type="email" class="form-control", placeholder = "E-mail Address">
+                        </div>
+                    </form>
+                </div>
+
+                <div class = 'col-6'>
+                    <h4>Class Info Settings</h4>
+                    <form class = "form-inline">
+                        <div class="form-group">
+                            <label>Professor Name</label>
+                            <input type="text" class="form-control" placeholder="Professor Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Course Name</label>
+                            <input type="text" class="form-control", placeholder = "Course Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Professor E-mail Address</label>
+                            <input type="email" class="form-control", placeholder = "E-mail Address">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Professor Office Hours</label>
+                            <input type="email" class="form-control", placeholder = "Office Hours">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary float-middle">Update Information</button>
+        </div>
+        </div>
+    </body>
+</html>
